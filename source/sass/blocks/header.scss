@@ -1,0 +1,26 @@
+.header {
+  @include wrapper;
+  @include outline;
+
+  width: 100%;
+
+  background-color: black;
+}
+
+.header__box {
+  @include wrapper;
+  @include outline;
+
+  display: flex;
+  max-width: 1461px;
+  padding: 33px 25px 0;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .header__box {
+    padding: 17px;
+  }
+}
+

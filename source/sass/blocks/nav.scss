@@ -1,0 +1,58 @@
+.nav {
+  display: flex;
+
+  min-width: 202px;
+  min-height: 52px;
+
+  @include outline;
+}
+
+.nav__logo {
+  display: flex;
+
+  min-width: 202px;
+  height: 52px;
+  margin-right: 8.3%;
+
+  cursor: pointer;
+
+  @include outline;
+}
+
+.nav__logo-img {
+  width: 52px;
+  height: 52px;
+  margin-right: 16px;
+
+  @include outline;
+}
+
+.nav__logo-box {
+  width: 100%;
+}
+
+.nav__headline {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.nav__text {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #788891;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .nav__logo-box {
+    display: none;
+  }
+}
