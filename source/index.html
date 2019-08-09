@@ -10,28 +10,30 @@
     <link rel="preload" href="fonts/ptmono-regular.woff2" as="font">
     <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font">
     <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
-    <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
 
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <!-- <<<<<<<<<<<<<<< sprite >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <!-- <<<<<<<<<<<<<<< sprite >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
-      <div style="display:none;">
-        <include src="build/img/sprite_auto.svg"></include>
-      </div>
+    <div style="display:none;">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
 
-    <!-- <<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  <!-- <<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <header class="header">
       <div class="header__box">
         <nav class="header__nav nav">
           <a class="nav__logo">
-            <img class="nav__logo-img" src="img/logo.svg" width="52" height="52" alt="Логотип Smart Device">
+            <picture>
+              <source media="(max-width: 750px)" srcset="img/logo-main.svg">
+              <img class="nav__logo-img" src="img/logo-main.svg" width="52" height="52" alt="Логотип Smart Device">
+            </picture>
 
             <div class="nav__logo-box">
-              <h1 class="nav__headline">Smart Device</h1>
-              <strong class="nav__text">умные технологии</strong>
+              <h1 class="nav__logo-headline">Smart Device</h1>
+              <svg class="nav__logo-smart" width="106" height="15"><use xlink:href="#icon-logo-smart"></use></svg>
             </div>
           </a>
         </nav>
@@ -68,6 +70,8 @@
     <footer class="footer">
 
     </footer>
+
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
 

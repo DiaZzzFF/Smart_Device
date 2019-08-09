@@ -1,6 +1,5 @@
 .contacts {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 
   width: 100%;
@@ -10,11 +9,12 @@
 }
 
 .contacts__menu {
-  min-width: 52px;
+  min-width: 72px;
   height: 52px;
+  margin-left: auto;
 
   background-color: transparent;
-  background-image: url("../img/icon-menu.svg");
+  background-image: url("../img/bg-menu.svg");
   background-repeat: no-repeat;
   background-size: 37px 13px;
   background-position: center;
@@ -37,29 +37,41 @@
   display: flex;
   align-items: center;
 
-  width: 30%;
-  min-height: 52px;
+  //width: ;
+  height: 52px;
   margin: 0;
-  padding: 0;
+  margin-left: auto;
+  padding: 0 10px;
 
   line-height: 18px;
 
-  color: #ffffff;
+  color: white;
 
   @include outline;
 
   &:hover {
-    opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-color: $blue;
+  }
+
+  &:hover .contacts__email-svg,
+  &:hover .contacts__tel-svg {
+    fill: white;
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: 0.8;
+  }
+
+  &:active .contacts__email-svg,
+  &:active .contacts__tel-svg {
+    fill: $blue;
   }
 }
 
-.contacts__email-text,
-.contacts__tel-text {
-  display: inline-block;
+.contacts__email-svg,
+.contacts__tel-svg {
+  fill: $blue;
 }
 
 .contacts__email-text {
@@ -75,6 +87,7 @@
 
   min-width: 180px;
   margin: 0;
+  margin-left: auto;
   padding: 13.5px 0;
 
   font-size: 14px;
@@ -84,10 +97,10 @@
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   border-radius: 5px;
 
   cursor: pointer;
@@ -98,6 +111,15 @@
 
   &:active {
     opacity: 0.6;
+    color: $blue;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet-2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width-2) {
+  .contacts__btn {
+    display: none;
   }
 }
 
@@ -112,11 +134,11 @@
   .contacts__tel {
     width: 52px;
     justify-content: center;
+    margin-left: 0;
   }
 
   .contacts__email-text,
-  .contacts__tel-text,
-  .contacts__btn {
+  .contacts__tel-text {
     display: none;
   }
 }
