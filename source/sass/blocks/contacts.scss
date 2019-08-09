@@ -11,7 +11,7 @@
 .contacts__menu {
   min-width: 72px;
   height: 52px;
-  margin-left: auto;
+  margin-left: 118px;
 
   background-color: transparent;
   background-image: url("../img/bg-menu.svg");
@@ -69,6 +69,10 @@
   }
 }
 
+.contacts__tel {
+  margin-left: 68px;
+}
+
 .contacts__email-svg,
 .contacts__tel-svg {
   fill: $blue;
@@ -87,7 +91,7 @@
 
   min-width: 180px;
   margin: 0;
-  margin-left: auto;
+  margin-left: 40px;
   padding: 13.5px 0;
 
   font-size: 14px;
