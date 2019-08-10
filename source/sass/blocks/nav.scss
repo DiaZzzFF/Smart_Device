@@ -16,28 +16,8 @@
 
 .nav__logo-img {
   display: block;
-  min-width: 52px;
-}
-
-.nav__logo-box {
-  width: 100%;
-  margin-left: 16px;
-}
-
-.nav__logo-headline {
-  margin: 0;
-
-  font-size: 25px;
-  line-height: 29px;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: white;
-
-  overflow: hidden;
-}
-
-.nav__logo-smart {
-  fill: $gray;
+  width: 202px;
+  height: 52px;
 }
 
 .nav__menu {
@@ -90,10 +70,6 @@
 
   .nav__logo-img {
     width: 38px;
-  }
-
-  .nav__logo-box {
-    display: none;
   }
 
   .nav__menu {

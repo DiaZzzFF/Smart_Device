@@ -25,12 +25,10 @@
     <header class="header">
       <nav class="header__nav nav">
         <a class="nav__logo">
-          <img class="nav__logo-img" src="img/logo-main.svg" width="52" height="52" alt="Логотип Smart Device">
-
-          <div class="nav__logo-box">
-            <h1 class="nav__logo-headline">Smart Device</h1>
-            <svg class="nav__logo-smart" width="106" height="15"><use xlink:href="#icon-logo-smart"></use></svg>
-          </div>
+          <picture>
+            <source media="(max-width: 750px)" srcset="img/logo.svg">
+            <img class="nav__logo-img" src="img/logo-white.svg" width="202" height="52" alt="Логотип Smart Device">
+          </picture>
         </a>
 
         <div class="nav__menu"></div>
