@@ -1,27 +1,23 @@
-.header {
-  @include wrapper;
+.promo {
+  width: 100%;
+  min-height: 878px;
+  margin-top: -85px;
 
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  max-width: 1461px;
-  padding: 33px 25px 0;
+  background-color: $black;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $tablet-width) {
-  .header {
-    padding-top: 20px;
-    padding-right: 9px;
+  .promo {
+    margin-top: -72px;
   }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $mobile-width) {
-  .header {
-    padding: 17px 4px 0 17px;
+  .promo {
+    margin-top: -55px;
   }
 }

@@ -4,8 +4,6 @@
 
   width: 75%;
   min-height: 52px;
-
-  @include outline;
 }
 
 .contacts__email,
@@ -13,17 +11,16 @@
   display: flex;
   align-items: center;
 
-  min-width: 155px;
+  width: 155px;
   height: 52px;
   margin: 0;
   margin-left: auto;
   padding: 0 10px;
 
   line-height: 18px;
-
   color: white;
 
-  @include outline;
+  overflow: hidden;
 
   &:hover {
     text-decoration: underline;
@@ -46,7 +43,7 @@
 }
 
 .contacts__tel {
-  min-width: 227px;
+  width: 227px;
   margin-left: 68px;
 }
 
@@ -57,10 +54,12 @@
 
 .contacts__email-text {
   padding-left: 20px;
+  overflow: hidden;
 }
 
 .contacts__tel-text {
   padding-left: 16px;
+  overflow: hidden;
 }
 
 /* --------- btn ----------*/
@@ -68,7 +67,8 @@
 .contacts__btn {
   display: block;
 
-  min-width: 180px;
+  width: 180px;
+  height: 45px;
   margin: 0;
   margin-left: 40px;
   padding: 13.5px 0;
@@ -86,6 +86,7 @@
   border: 1px solid white;
   border-radius: 5px;
 
+  overflow: hidden;
   cursor: pointer;
 
   &:hover {

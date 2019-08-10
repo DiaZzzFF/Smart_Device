@@ -3,8 +3,6 @@
 
   min-width: 377px;
   min-height: 52px;
-
-  @include outline;
 }
 
 .nav__logo {
@@ -13,19 +11,12 @@
   min-width: 202px;
   height: 52px;
 
-  @include outline;
-
-  &:hover .nav__logo-smart {
-    fill: white;
-  }
+  overflow: hidden;
 }
 
 .nav__logo-img {
   display: block;
   min-width: 52px;
-  height: 52px;
-
-  @include outline;
 }
 
 .nav__logo-box {
@@ -41,6 +32,8 @@
   font-weight: 700;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: white;
+
+  overflow: hidden;
 }
 
 .nav__logo-smart {
@@ -59,8 +52,6 @@
   background-position: center;
 
   cursor: pointer;
-
-  @include outline;
 
   &:hover {
     opacity: 0.8;
