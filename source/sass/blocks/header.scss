@@ -16,9 +16,17 @@
   padding: 33px 25px 0;
 }
 
+/* >>>>>>>>> */
+
+@media (max-width: 1024px) {
+  .header {
+    background-color: green;
+  }
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .header__box {
     padding-left: 17px;
     padding-right: 17px;
