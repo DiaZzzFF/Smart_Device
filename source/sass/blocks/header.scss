@@ -18,9 +18,18 @@
 
 /* >>>>>>>>> */
 
-@media (max-width: 1024px) {
+@media (max-width: 320px) {
   .header {
     background-color: green;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .header__box {
+    padding-top: 20px;
+    padding-right: 9px;
   }
 }
 
@@ -28,8 +37,6 @@
 
 @media (max-width: $mobile-width) {
   .header__box {
-    padding-left: 17px;
-    padding-right: 17px;
+    padding: 17px 4px 0 17px;
   }
 }
-

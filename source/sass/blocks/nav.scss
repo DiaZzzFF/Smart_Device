@@ -1,7 +1,7 @@
 .nav {
   display: flex;
 
-  max-width: 377px;
+  min-width: 377px;
   min-height: 52px;
 
   @include outline;
@@ -71,23 +71,42 @@
   }
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-help-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media (max-width: $desktop-width-help-1) {
+@media (max-width: $tablet-width) {
   .nav {
-    //max-width: 377px;
+    flex-grow: 2;
+  }
+
+  .nav__menu {
+    margin-left: auto;
   }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/*
+
 @media (max-width: $mobile-width) {
-  .nav__logo-box {
-    display: none;
+  .nav {
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .nav__logo,
+  .nav__logo-img {
+    min-width: 38px;
+    height: 38px;
   }
 
   .nav__logo-img {
     width: 38px;
+  }
+
+  .nav__logo-box {
+    display: none;
+  }
+
+  .nav__menu {
+    min-width: 67px;
     height: 38px;
   }
-}*/
+}

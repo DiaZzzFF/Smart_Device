@@ -114,30 +114,49 @@
   }
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet-2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/*
-@media (max-width: $tablet-width-2) {
-  .contacts__btn {
-    display: none;
-  }
-}*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/*
-@media (max-width: $mobile-width) {
-  .contacts__menu {
-    margin-left: auto;
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: 118px;
   }
 
   .contacts__email,
   .contacts__tel {
-    width: 52px;
     justify-content: center;
+
+    min-width: 59px;
     margin-left: 0;
   }
 
+  .contacts__email-svg {
+    width: 25.33px;
+    height: 18.67px;
+  }
+
+  .contacts__tel-svg {
+    width: 24px;
+    height: 24px;
+  }
+
   .contacts__email-text,
-  .contacts__tel-text {
+  .contacts__tel-text,
+  .contacts__btn {
     display: none;
   }
-}*/
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    width: 92px;
+    min-height: 38px;
+  }
+
+  .contacts__email,
+  .contacts__tel {
+    min-width: 46px;
+    height: 38px;
+  }
+}
