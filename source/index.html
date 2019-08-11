@@ -34,7 +34,7 @@
         <div class="nav__menu"></div>
       </nav>
 
-      <div class="header__contacts contacts">
+      <section class="header__contacts contacts">
         <a href="mailto:info@sd.ru" class="contacts__email" aria-label="Написать на почту">
           <div class="contacts__svg-box">
             <svg class="contacts__email-svg" width="19" height="14"><use xlink:href="#icon-envelope"></use></svg>
@@ -53,12 +53,14 @@
         <button class="contacts__btn" type="button" aria-label="Заказать звонок">
           Заказать звонок
         </button>
-      </div>
+      </section>
     </header>
 
   <!-- <<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <main class="main">
+      <h1 class="visually-hidden">Smart Device</h1>
+
       <section class="promo">
 
       </section>
@@ -67,7 +69,105 @@
   <!-- <<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     <footer class="footer">
+      <div class="footer__wrapper">
+        <section class="footer__top">
+          <img class="footer__logo-img" src="img/logo-black.svg" width="216" height="52" alt="Логотип Smart Device">
 
+          <div class="footer__copyright-box">
+            <p class="footer__copyright">Все права защищены</p>
+            <p class="footer__license">1999-2018 SD Service Devices</p>
+          </div>
+
+          <section class="footer__social social">
+            <h4 class="visually-hidden">Социальные сети</h4>
+
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#" aria-label="Следите за нами в Facebook">
+                  <span class="visually-hidden">Facebook</span>
+                  <svg class="social__link-svg" width="27" height="27"><use xlink:href="#icon-fb"></use></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--ok" href="#" aria-label="Следите за нами в Odnoklassniki">
+                  <span class="visually-hidden">Odnoklassniki</span>
+                  <svg class="social__link-svg" width="27" height="27"><use xlink:href="#icon-ok"></use></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="#" aria-label="Следите за нами в VK">
+                  <span class="visually-hidden">VK</span>
+                  <svg class="social__link-svg" width="27" height="27"><use xlink:href="#icon-vk"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="footer__middle">
+          <section class="footer__menu f-menu">
+            <h4 class="f-menu__headline">Разделы сайта</h4>
+
+            <ul class="f-menu__list">
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  О компании
+                </a>
+              </li>
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  Продукты
+                </a>
+              </li>
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  Производство печатных плат
+                </a>
+              </li>
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  Монтаж печатных плат
+                </a>
+              </li>
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  Комплектующие
+                </a>
+              </li>
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  Доставка
+                </a>
+              </li>
+              <li class="f-menu__item">
+                <a href="" class="f-menu__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer__location location">
+            <h4 class="location__headline">Наш офис</h4>
+
+            <p class="location__text">
+              г. Мытищи, Олимпийский проспект, д.10
+            </p>
+
+            <ul class="location__tel-list">
+              <li class="location__tel-item">+7 (495) 589-40-50</li>
+              <li class="location__tel-item">+7 (925) 003-87-67</li>
+              <li class="location__tel-item">+7 (926) 926-080-79</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="footer__bottom">
+          <p class="footer__nda">Условия конфиденциальности</p>
+
+          <a href="#" class="footer__developer">Developed by wow studio</a>
+        </section>
+      </div>
     </footer>
 
     <script src="js/picturefill.min.js"></script>

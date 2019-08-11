@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  min-height: 317px;
+
+  background-color: $bg-footer;
+}
+
+.footer__wrapper {
+  @include wrapper;
+  @include outline;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 1461px;
+  padding: 65px 25px 0;
+}
+
+.footer__top {
+  width: 30%;
+
+  @include outline;
+}
+
+.footer__middle {
+  display: flex;
+  justify-content: space-between;
+
+  width: 70%;
+
+  @include outline;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 57%;
+  margin-left: auto;
+
+  @include outline;
+}
