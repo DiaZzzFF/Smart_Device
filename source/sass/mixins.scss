@@ -12,3 +12,35 @@
 
   list-style: none;
 }
+
+@mixin font-h4 {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $black;
+}
+
+@mixin font-footer {
+  font-size: 15px;
+  line-height: 25px;
+  color: $black;
+  opacity: 0.5;
+}
+
+@mixin footer-link-hover {
+  text-decoration: underline;
+  text-decoration-color: $blue;
+
+  opacity: 1;
+}
+
+@mixin footer-link-active {
+  font-weight: 700;
+  color: $black;
+}

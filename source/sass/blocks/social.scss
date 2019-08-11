@@ -1,0 +1,24 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include ul-style;
+
+  width: 112px;
+  height: 28px;
+}
+
+.social__link-svg {
+  fill: #cdcdcd;
+}
+
+.social__link {
+  &:hover .social__link-svg {
+    fill: $blue;
+  }
+
+  &:active .social__link-svg {
+    opacity: 0.5;
+  }
+}
+
