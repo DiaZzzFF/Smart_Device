@@ -1,6 +1,8 @@
 .f-menu {
   max-width: 447px;
   margin-left: auto;
+
+  @include outline;
 }
 
 .f-menu__headline {
@@ -71,6 +73,10 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet-width >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $tablet-width) {
+  .f-menu {
+    margin-left: 0;
+  }
+
   .f-menu__item {
     padding-right: 0;
 

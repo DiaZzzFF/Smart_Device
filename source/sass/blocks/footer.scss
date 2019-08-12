@@ -65,16 +65,18 @@
   .footer__wrapper-1 {
     flex-direction: column;
 
-    padding-top: 0;
+    padding: 0;
   }
 
   .footer__top {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
 
     min-height: 97px;
     margin-right: 0;
-    padding-top: 19px;
+    padding: 19px 25px 0;
 
     border-bottom: 1px solid rgba($color: #626962, $alpha: 0.2);
   }
@@ -92,8 +94,7 @@
   }
 
   .footer__middle {
-    padding-top: 38px;
-    padding-right: 12px;
+    padding: 38px 37px 36px 25px;
   }
 
   .footer__bottom {
