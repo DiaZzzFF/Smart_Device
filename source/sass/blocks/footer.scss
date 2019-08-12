@@ -7,7 +7,6 @@
 
 .footer__wrapper-1 {
   @include wrapper;
-  @include outline;
 
   display: flex;
 
@@ -17,16 +16,12 @@
 
 .footer__top {
   min-width: 216px;
-
-  @include outline;
 }
 
 .footer__middle {
   display: flex;
 
   width: 100%;
-
-  @include outline;
 }
 
 .footer__wrapper-2 {
@@ -47,6 +42,8 @@
 }
 
 .footer__logo-img {
+  width: 216px;
+  height: 52px;
   margin-bottom: 53px;
 }
 
@@ -67,23 +64,39 @@
 @media (max-width: $tablet-width) {
   .footer__wrapper-1 {
     flex-direction: column;
+
+    padding-top: 0;
   }
 
   .footer__top {
     display: flex;
+    justify-content: space-between;
 
+    min-height: 97px;
     margin-right: 0;
+    padding-top: 19px;
+
+    border-bottom: 1px solid rgba($color: #626962, $alpha: 0.2);
+  }
+
+  .footer__logo-img {
+    margin-bottom: 0;
+  }
+
+  .footer__t-license {
+    display: block;
+
+    @include font-license;
+
+    margin-top: 17px;
   }
 
   .footer__middle {
+    padding-top: 38px;
     padding-right: 12px;
   }
 
   .footer__bottom {
     min-height: 69px;
-  }
-
-  .footer__t-license {
-    display: block;
   }
 }

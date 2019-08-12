@@ -1,13 +1,10 @@
 .location {
   min-width: 333px;
   margin-left: auto;
-
-  @include outline;
 }
 
 .location__headline {
   @include font-h4;
-  @include outline;
 }
 
 .location__text,

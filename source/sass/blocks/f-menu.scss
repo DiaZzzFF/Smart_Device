@@ -1,18 +1,14 @@
 .f-menu {
-  @include outline;
-
   max-width: 447px;
   margin-left: auto;
 }
 
 .f-menu__headline {
   @include font-h4;
-  @include outline;
 }
 
 .f-menu__list {
   @include ul-style;
-  @include outline;
 
   display: flex;
   justify-content: space-between;

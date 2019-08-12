@@ -33,6 +33,18 @@
   opacity: 0.5;
 }
 
+@mixin font-license {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $black;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
 @mixin footer-link-hover {
   text-decoration: underline;
   text-decoration-color: $blue;

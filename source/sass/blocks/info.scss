@@ -2,15 +2,7 @@
 .info__license,
 .info__nda,
 .info__developer {
-  margin: 0;
-
-  font-size: 13px;
-  line-height: 24px;
-  color: $black;
-
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  opacity: 0.5;
+  @include font-license;
 }
 
 .info__license {
