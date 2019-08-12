@@ -1,7 +1,8 @@
 .f-menu {
   @include outline;
 
-  width: 100%;
+  max-width: 447px;
+  margin-left: auto;
 }
 
 .f-menu__headline {
@@ -16,12 +17,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  width: 100%;
 }
 
 .f-menu__item {
-  width: 45%;
+  max-width: 50%;
+  min-width: 250px;
+  padding-right: 15px;
 
   &:nth-child(1) {
     order: 1;
@@ -50,11 +51,15 @@
   &:nth-child(7) {
     order: 6;
   }
+
+  &:nth-child(5),
+  &:nth-child(6),
+  &:nth-child(7) {
+    min-width: 140px;
+  }
 }
 
 .f-menu__link {
-  display: inline-block;
-
   @include font-footer;
   @include outline;
 

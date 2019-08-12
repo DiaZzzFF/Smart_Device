@@ -1,0 +1,42 @@
+.info__copyright,
+.info__license,
+.info__nda,
+.info__developer {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $black;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.info__license {
+  margin-left: 75px;
+}
+
+.info__nda {
+  margin-left: 142px;
+}
+
+.info__developer {
+  margin-left: auto;
+
+  &:hover {
+    @include footer-link-hover;
+  }
+
+  &:active {
+    @include footer-link-active;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< $desktop-width-help-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $desktop-width-help-1) {
+  .info__nda {
+    margin-left: auto;
+  }
+}

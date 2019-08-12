@@ -1,5 +1,6 @@
 .location {
   min-width: 333px;
+  margin-left: auto;
 
   @include outline;
 }
