@@ -54,10 +54,36 @@
   display: none;
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< $desktop-width-help-2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-width-help-2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $desktop-width-help-2) {
   .footer__top {
     margin-right: 15px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet-width >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .footer__wrapper-1 {
+    flex-direction: column;
+  }
+
+  .footer__top {
+    display: flex;
+
+    margin-right: 0;
+  }
+
+  .footer__middle {
+    padding-right: 12px;
+  }
+
+  .footer__bottom {
+    min-height: 69px;
+  }
+
+  .footer__t-license {
+    display: block;
   }
 }

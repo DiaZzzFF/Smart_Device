@@ -33,10 +33,23 @@
   }
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< $desktop-width-help-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-width-help-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $desktop-width-help-1) {
   .info__nda {
     margin-left: auto;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet-width >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .info__copyright,
+  .info__license {
+    display: none;
+  }
+
+  .info__nda {
+    margin-left: 0;
   }
 }
