@@ -40,8 +40,9 @@
     cursor: pointer;
 
     &:checked ~ .accordion__content {
-      margin-top: 0;
       max-height: 0;
+      margin-top: 0;
+
       opacity: 0;
       transform: translate(0, 50%);
     }

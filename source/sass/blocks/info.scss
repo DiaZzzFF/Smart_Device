@@ -49,6 +49,14 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $mobile-width) {
+  .info {
+    text-align: center;
+  }
+
+  .info__nda {
+    margin-bottom: 21px;
+  }
+
   .info__developer {
     margin-left: 0;
   }
