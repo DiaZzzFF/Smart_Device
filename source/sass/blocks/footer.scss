@@ -51,7 +51,7 @@
   display: none;
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-width-help-2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-help-2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $desktop-width-help-2) {
   .footer__top {
@@ -59,7 +59,7 @@
   }
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet-width >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $tablet-width) {
   .footer__wrapper-1 {
@@ -93,6 +93,10 @@
     margin-top: 17px;
   }
 
+  .footer__social {
+    margin-top: 17px;
+  }
+
   .footer__middle {
     padding: 38px 37px 36px 25px;
   }
@@ -101,3 +105,34 @@
     min-height: 69px;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 261px;
+    padding: 46px 15px 54px;
+  }
+
+  .footer__t-license {
+    margin-top: 0;
+  }
+
+  .footer__social {
+    margin-top: 0;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 123px;
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+}
+

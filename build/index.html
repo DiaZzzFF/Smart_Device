@@ -115,11 +115,14 @@
           </section>
         </section>
 
-        <section class="footer__middle">
-          <section class="footer__menu f-menu">
-            <h4 class="f-menu__headline">Разделы сайта</h4>
+        <section class="footer__middle accordion">
+          <section class="footer__menu f-menu accordion__item">
+            <input class="accordion__checkbox" type="checkbox" checked="">
+            <span class="accordion__span"></span>
 
-            <ul class="f-menu__list">
+            <h4 class="f-menu__headline accordion__title">Разделы сайта</h4>
+
+            <ul class="f-menu__list accordion__content">
               <li class="f-menu__item">
                 <a class="f-menu__link" href="#">
                   О компании
@@ -158,18 +161,23 @@
             </ul>
           </section>
 
-          <section class="footer__location location">
-            <h4 class="location__headline">Наш офис</h4>
+          <section class="footer__location location accordion__item">
+            <input class="accordion__checkbox" type="checkbox" checked="">
+            <span class="accordion__span"></span>
 
-            <p class="location__text">
-              г. Мытищи, Олимпийский проспект, д.10
-            </p>
+            <h4 class="location__headline accordion__title">Наш офис</h4>
 
-            <ul class="location__tel-list">
-              <li class="location__tel-item">+7 (495) 589-40-50</li>
-              <li class="location__tel-item">+7 (925) 003-87-67</li>
-              <li class="location__tel-item">+7 (926) 926-080-79</li>
-            </ul>
+            <div class="accordion__content">
+              <p class="location__text">
+                г. Мытищи, Олимпийский проспект, д.10
+              </p>
+
+              <ul class="location__tel-list">
+                <li class="location__tel-item">+7 (495) 589-40-50</li>
+                <li class="location__tel-item">+7 (925) 003-87-67</li>
+                <li class="location__tel-item">+7 (926) 926-080-79</li>
+              </ul>
+            </div>
           </section>
         </section>
       </div>

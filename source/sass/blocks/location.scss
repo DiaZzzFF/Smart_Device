@@ -10,7 +10,6 @@
 .location__text,
 .location__tel-list {
   @include font-footer;
-  @include outline;
 }
 
 .location__text {
@@ -19,4 +18,18 @@
 
 .location__tel-list {
   @include ul-style;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .location__text {
+    max-width: 210px;
+  }
+
+  .location__tel-item {
+    &:last-of-type {
+      padding-bottom: 26px;
+    }
+  }
 }
