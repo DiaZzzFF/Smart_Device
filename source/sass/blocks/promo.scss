@@ -23,7 +23,7 @@
 .promo__advertising {
   position: relative;
 
-  min-width: 725px;
+  min-width: 726px;
   margin-left: auto;
   padding-left: 25px;
   padding-top: 58px;
@@ -31,23 +31,10 @@
   @include outline;
 }
 
-.promo__img-box {
-  min-width: 705px;
-  height: 515px;
-  margin-left: auto;
-
-  @include outline;
-}
-
-.promo__img {
-  width: 705px;
-  height: 515px;
-}
-
 .promo__heading {
   display: block;
 
-  min-width: 725px;
+  min-width: 726px;
   margin-bottom: 27px;
 
   font-size: 80px;
@@ -105,6 +92,14 @@
   background-color: $blue;
   border: 1px solid $blue;
   border-radius: 5px;
+
+  &:hover {
+    background-color: rgba($color: $blue, $alpha: 0.7);
+  }
+
+  &:active {
+    background-color: rgba($color: $blue, $alpha: 0.4);
+  }
 }
 
 .promo__scroll-down {
@@ -120,29 +115,77 @@
   transform: rotate(-90deg);
 }
 
+.promo__img-box {
+  min-width: 705px;
+  height: 515px;
+  margin-left: auto;
+
+  @include outline;
+}
+
+.promo__img {
+  width: 705px;
+  height: 515px;
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $tablet-width) {
   .promo {
+    min-height: 684px;
     margin-top: -72px;
+    padding-top: 82px;
+  }
+
+  .promo__wrapper {
+    min-height: 602px;
   }
 
   .promo__scroll-down {
     display: none;
   }
 
- /* .promo__img-box {
-    width: 465px;
-    height: 260px;
-    margin-left: auto;
+  .promo__advertising {
+    min-width: 404px;
+    padding-left: 91px;
+    padding-top: 108px;
+  }
+
+  .promo__heading {
+    min-width: 200px;
+    max-width: 350px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo__text {
+    width: 404px;
+    margin-bottom: 54px;
+    padding-left: 48px;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    &::before {
+      width: 33px;
+    }
+  }
+
+  .promo__link {
+    width: 379px;
+    margin-left: 48px;
+  }
+
+  .promo__img-box {
+    min-width: 314px;
+    height: 386px;
   }
 
   .promo__img {
-    width: 465px;
-    height: 340px;
-
-    margin-left: 88px;
-  }*/
+    width: 314px;
+    height: 386px;
+  }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
