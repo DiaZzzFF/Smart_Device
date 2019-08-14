@@ -62,7 +62,33 @@
       <h1 class="visually-hidden">Smart Device</h1>
 
       <section class="promo">
+        <div class="promo__wrapper">
+          <article class="promo__advertising">
+            <strong class="promo__heading">Печатные платы</strong>
 
+            <p class="promo__text">
+              производство и монтаж, поставка комплектующих, блоков и модулей
+            </p>
+
+            <a class="promo__link" href="#">
+              Получить бесплатную консультацию
+            </a>
+
+            <span class="promo__scroll-down">Скролл вниз</span>
+          </article>
+
+          <div class="promo__img-box">
+            <picture>
+              <source type="image/webp" media="(max-width: 769px)" srcset="img/promo-mobile.webp">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/promo-tablet.webp">
+              <source type="image/webp" srcset="img/promo-desktop.webp">
+
+              <source media="(max-width: 769px)" srcset="img/promo-mobile.png">
+              <source media="(max-width: 1023px)" srcset="img/promo-tablet.png">
+              <img class="promo__img" src="img/promo-desktop.png" alt="Печатные платы">
+            </picture>
+          </div>
+        </div>
       </section>
     </main>
 

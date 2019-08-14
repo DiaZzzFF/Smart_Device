@@ -2,8 +2,122 @@
   width: 100%;
   min-height: 878px;
   margin-top: -85px;
+  padding-top: 258px;
 
   background-color: $black;
+  background-image: url("../img/bg-promo.png");
+}
+
+.promo__wrapper {
+  display: flex;
+
+  max-width: 1569px;
+  min-height: 620px;
+
+  overflow: hidden;
+
+  @include wrapper;
+  @include outline;
+}
+
+.promo__advertising {
+  position: relative;
+
+  min-width: 725px;
+  margin-left: auto;
+  padding-left: 25px;
+  padding-top: 58px;
+
+  @include outline;
+}
+
+.promo__img-box {
+  min-width: 705px;
+  height: 515px;
+  margin-left: auto;
+
+  @include outline;
+}
+
+.promo__img {
+  width: 705px;
+  height: 515px;
+}
+
+.promo__heading {
+  display: block;
+
+  min-width: 725px;
+  margin-bottom: 27px;
+
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: white;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  position: relative;
+
+  width: 710px;
+  margin: 0;
+  margin-bottom: 43px;
+  padding-left: 94px;
+
+  font-size: 22px;
+  line-height: 34px;
+  color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 2px;
+
+    width: 66px;
+    height: 2px;
+
+    background-color: white;
+  }
+}
+
+.promo__link {
+  display: block;
+
+  width: 407px;
+  height: 55px;
+  margin-left: 94px;
+  padding: 18px;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: white;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+}
+
+.promo__scroll-down {
+  position: absolute;
+  bottom: 127px;
+  left: -10px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+
+  opacity: 0.5;
+  transform: rotate(-90deg);
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -12,6 +126,23 @@
   .promo {
     margin-top: -72px;
   }
+
+  .promo__scroll-down {
+    display: none;
+  }
+
+ /* .promo__img-box {
+    width: 465px;
+    height: 260px;
+    margin-left: auto;
+  }
+
+  .promo__img {
+    width: 465px;
+    height: 340px;
+
+    margin-left: 88px;
+  }*/
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
