@@ -57,13 +57,18 @@
 
 @media (max-width: $mobile-width) {
   .nav {
+    min-width: 38px;
     width: 38px;
     min-height: 38px;
   }
 
   .nav__logo,
   .nav__logo-img {
+    min-width: 38px;
     max-width: 38px;
+    width: 38px;
+    min-height: 38px;
+    max-height: 38px;
     height: 38px;
   }
 

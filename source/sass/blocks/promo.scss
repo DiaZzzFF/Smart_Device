@@ -128,6 +128,10 @@
   height: 515px;
 }
 
+.promo__link-mobile {
+  display: none;
+}
+
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $tablet-width) {
@@ -192,6 +196,62 @@
 
 @media (max-width: $mobile-width) {
   .promo {
+    min-height: 647px;
     margin-top: -55px;
+    padding-top: 70px;
+  }
+
+  .promo__wrapper {
+    min-height: 508px;
+  }
+
+  .promo__advertising {
+    position: absolute;
+
+    min-width: 250px;
+    margin-top: 110px;
+    padding-left: 15px;
+  }
+
+  .promo__heading {
+    min-width: 300px;
+    max-width: 320px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo__text {
+    width: 300px;
+    margin-bottom: 39px;
+    padding-left: 48px;
+
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .promo__link {
+    content: "Бесплатная консультация";
+
+    width: 287px;
+    margin-left: 2px;
+  }
+
+  .promo__img-box {
+    min-width: 294px;
+    height: 368px;
+  }
+
+  .promo__img {
+    width: 294px;
+    height: 368px;
+  }
+
+  .promo__link-desktop {
+    display: none;
+  }
+
+  .promo__link-mobile {
+    display: block;
   }
 }

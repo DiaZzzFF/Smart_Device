@@ -23,6 +23,10 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $mobile-width) {
+  .location {
+    min-width: 320px;
+  }
+
   .location__text {
     max-width: 210px;
   }
