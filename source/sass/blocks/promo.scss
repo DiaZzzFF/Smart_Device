@@ -13,11 +13,11 @@
 
   max-width: 1569px;
   min-height: 620px;
+  padding-bottom: 25px;
 
   overflow: hidden;
 
   @include wrapper;
-  @include outline;
 }
 
 .promo__advertising {
@@ -27,8 +27,6 @@
   margin-left: auto;
   padding-left: 25px;
   padding-top: 58px;
-
-  @include outline;
 }
 
 .promo__heading {
@@ -119,8 +117,6 @@
   min-width: 705px;
   height: 515px;
   margin-left: auto;
-
-  @include outline;
 }
 
 .promo__img {
@@ -216,23 +212,27 @@
   .promo__heading {
     min-width: 300px;
     max-width: 320px;
+    height: 94px;
 
     font-size: 40px;
     line-height: 47px;
+
+    overflow: hidden;
   }
 
   .promo__text {
     width: 300px;
     margin-bottom: 39px;
     padding-left: 48px;
+    height: 75px;
 
     font-size: 16px;
     line-height: 25px;
+
+    overflow: hidden;
   }
 
   .promo__link {
-    content: "Бесплатная консультация";
-
     width: 287px;
     margin-left: 2px;
   }
