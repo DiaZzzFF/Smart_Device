@@ -65,6 +65,8 @@
 /* --------- btn ----------*/
 
 .contacts__btn {
+  @include font-roboto-cond-bold;
+
   display: block;
 
   width: 180px;
@@ -75,8 +77,6 @@
 
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;

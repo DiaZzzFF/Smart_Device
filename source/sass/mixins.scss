@@ -56,3 +56,13 @@
   font-weight: 700;
   color: $black;
 }
+
+@mixin font-roboto-cond-normal {
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+@mixin font-roboto-cond-bold {
+  font-weight: 700;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}

@@ -30,6 +30,8 @@
 }
 
 .promo__heading {
+  @include font-roboto-cond-bold;
+
   display: block;
 
   min-width: 726px;
@@ -37,8 +39,6 @@
 
   font-size: 80px;
   line-height: 94px;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: white;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -70,6 +70,8 @@
 }
 
 .promo__link {
+  @include font-roboto-cond-bold;
+
   display: block;
 
   width: 407px;
@@ -79,13 +81,10 @@
 
   font-size: 16px;
   line-height: 19px;
-  font-weight: 700;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: white;
-
-  text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: $blue;
   border: 1px solid $blue;
