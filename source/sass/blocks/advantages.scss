@@ -92,3 +92,32 @@
     margin-bottom: 9px;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    flex-direction: column;
+
+    padding: 37px 15px 0;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-width: 290px;
+    padding-right: 15px;
+
+    &:nth-child(3) {
+      margin-left: 0;
+      padding-right: 11.4px;
+    }
+
+    &:nth-child(5) {
+      padding-right: 13px;
+    }
+  }
+
+  .advantages__heading {
+    font-size: 20px;
+  }
+}

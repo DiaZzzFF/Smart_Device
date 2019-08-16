@@ -27,3 +27,13 @@
     background-size: 85%;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .main__white-bg {
+    background-position: center 670px;
+    background-size: 200%;
+  }
+}
+
