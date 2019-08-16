@@ -15,8 +15,6 @@
   background-image: url("../img/bg-figures-desktop.png");
   background-repeat: repeat-x;
   background-position: -190px 46px;
-
-  @include outline;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -35,7 +33,7 @@
 @media (max-width: $mobile-width) {
   .main__white-bg {
     background-position: center 670px;
-    background-size: 200%;
+    background-size: 179%;
   }
 }
 

@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: 25px 84px;
 
-  @include outline;
+  overflow: hidden;
 }
 
 .about__heading,
@@ -22,6 +22,9 @@
 .about__text,
 .about__link {
   margin-left: 204px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .about__heading {
@@ -29,16 +32,9 @@
 
   font-size: 36px;
   line-height: 51px;
-
-  @include outline;
 }
 
 .about__text {
-  @include outline;
-
-  text-overflow: ellipsis;
-  overflow: hidden;
-
   &:nth-of-type(2) {
     margin-bottom: 38px;
   }
@@ -62,8 +58,6 @@
   border: 1px solid $blue;
   border-radius: 5px;
 
-  overflow: hidden;
-
   &:hover {
     color: white;
     background-color: $blue;
@@ -78,12 +72,8 @@
 
 @media (max-width: $tablet-width) {
   .about {
-    @include wrapper;
-
-    max-width: 1250px;
     min-height: 461px;
-    height: 461px;
-    padding: 25px 12px 25px 0;
+    padding: 25px 29px 25px 0;
 
     background-image: url("../img/bg-about-tablet.png");
     background-position: 25px 30px;
@@ -101,7 +91,39 @@
 
     &:nth-of-type(2) {
       height: 90px;
-      //margin-bottom: 30px;
+    }
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .about {
+    min-height: 573px;
+    padding: 26px 15px;
+
+    background-image: none;
+  }
+
+  .about__heading,
+  .about__text,
+  .about__link {
+    margin-left: 0;
+  }
+
+  .about__heading {
+    margin-bottom: 21px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__text {
+    margin-bottom: 38px;
+
+    &:nth-of-type(2) {
+      height: 180px;
+      margin-bottom: 30px;
     }
   }
 }
