@@ -96,62 +96,64 @@
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
 
-          <article class="advantages__item">
-            <svg class="advantages__svg" width="29" height="35"><use xlink:href="#icon-stopwatch"></use></svg>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <svg class="advantages__svg" width="29" height="35"><use xlink:href="#icon-stopwatch"></use></svg>
 
-            <h3 class="advantages__heading">
-              Оперативные сроки
-            </h3>
+              <h3 class="advantages__heading">
+                Оперативные сроки
+              </h3>
 
-            <p class="advantages__text">
-              Усовершенствованная логистическая система
-              позволяет нам просчитывать стоимость, производить
-              и доставлять заказы плат и комплектующих в самые
-              короткие сроки
-            </p>
-          </article>
+              <p class="advantages__text">
+                Усовершенствованная логистическая система
+                позволяет нам просчитывать стоимость, производить
+                и доставлять заказы плат и комплектующих в самые
+                короткие сроки
+              </p>
+            </li>
 
-          <article class="advantages__item">
-            <svg class="advantages__svg" width="35" height="35"><use xlink:href="#icon-hired"></use></svg>
+            <li class="advantages__item">
+              <svg class="advantages__svg" width="35" height="35"><use xlink:href="#icon-hired"></use></svg>
 
-            <h3 class="advantages__heading">
-              Крупные поставщики
-            </h3>
+              <h3 class="advantages__heading">
+                Крупные поставщики
+              </h3>
 
-            <p class="advantages__text">
-              Нашими поставщиками являются такие крупные мировые
-              компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
-              Сотрудничество с такими компаниями обеспечивает
-              хорошее качество нашей продукции.
-            </p>
-          </article>
+              <p class="advantages__text">
+                Нашими поставщиками являются такие крупные мировые
+                компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                Сотрудничество с такими компаниями обеспечивает
+                хорошее качество нашей продукции.
+              </p>
+            </li>
 
-          <article class="advantages__item">
-            <svg class="advantages__svg" width="36" height="31"><use xlink:href="#icon-detective"></use></svg>
+            <li class="advantages__item">
+              <svg class="advantages__svg" width="36" height="31"><use xlink:href="#icon-detective"></use></svg>
 
-            <h3 class="advantages__heading">
-              Полная конфиденциальность
-            </h3>
+              <h3 class="advantages__heading">
+                Полная конфиденциальность
+              </h3>
 
-            <p class="advantages__text">
-              По желанию клиента мы обеспечиваем полную
-              конфеденциальность.
-            </p>
-          </article>
+              <p class="advantages__text">
+                По желанию клиента мы обеспечиваем полную
+                конфеденциальность.
+              </p>
+            </li>
 
-          <article class="advantages__item">
-            <svg class="advantages__svg" width="35" height="35"><use xlink:href="#icon-tag"></use></svg>
+            <li class="advantages__item">
+              <svg class="advantages__svg" width="35" height="35"><use xlink:href="#icon-tag"></use></svg>
 
-            <h3 class="advantages__heading">
-              Персонализация стоимости
-            </h3>
+              <h3 class="advantages__heading">
+                Персонализация стоимости
+              </h3>
 
-            <p class="advantages__text">
-              Мы подбираем определенную фабрику, поставщиков,
-              вид доставки, чтобы установить ту цену, которая
-              Вас устраивает.
-            </p>
-          </article>
+              <p class="advantages__text">
+                Мы подбираем определенную фабрику, поставщиков,
+                вид доставки, чтобы установить ту цену, которая
+                Вас устраивает.
+              </p>
+            </li>
+          </ul>
         </section>
 
         <section class="about">
@@ -170,6 +172,76 @@
           </p>
 
           <a class="about__link" href="#" aria-label="Узнать подробнее о компании">Подробнее</a>
+        </section>
+      </div>
+
+      <section class="services">
+        <div class="services__wrapper">
+          <h2 class="services__title">
+            Service Device предлагает следующие товары и услуги
+          </h2>
+
+          <ul class="services__list">
+            <li class="services__item">
+              <a class="services__link" href="#" aria-label="Перейти на страницу Производство печатных плат">
+                <div class="services__img-box">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 769px)" srcset="img/pcb-manufacturing-mobile.webp">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-manufacturing-tablet.webp">
+                    <source type="image/webp" srcset="img/pcb-manufacturing-desktop.webp">
+
+                    <source media="(max-width: 769px)" srcset="img/pcb-manufacturing-mobile.jpg">
+                    <source media="(max-width: 1023px)" srcset="img/pcb-manufacturing-tablet.jpg">
+                    <img class="services__img" src="img/pcb-manufacturing-desktop.jpg" alt="Производство печатных плат">
+                  </picture>
+                </div>
+
+                <h3 class="services__heading">Производство печатных плат</h3>
+
+                <div class="services__arrow"></div>
+              </a>
+            </li>
+
+            <li class="services__item">
+              <a class="services__link" href="#" aria-label="Перейти на страницу Монтаж печатных плат">
+                <div class="services__img-box">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 769px)" srcset="img/pcb-assembly-mobile.webp">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-assembly-tablet.webp">
+                    <source type="image/webp" srcset="img/pcb-assembly-desktop.webp">
+
+                    <source media="(max-width: 769px)" srcset="img/pcb-assembly-mobile.jpg">
+                    <source media="(max-width: 1023px)" srcset="img/pcb-assembly-tablet.jpg">
+                    <img class="services__img" src="img/pcb-assembly-desktop.jpg" alt="Монтаж печатных плат">
+                  </picture>
+                </div>
+
+                <h3 class="services__heading">Монтаж печатных плат</h3>
+
+                <div class="services__arrow"></div>
+              </a>
+            </li>
+
+            <li class="services__item">
+              <a class="services__link" href="#" aria-label="Перейти на страницу Комплектующие для светотехники">
+                <div class="services__img-box">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 769px)" srcset="img/lighting-mobile.webp">
+                    <source type="image/webp" media="(max-width: 1023px)" srcset="img/lighting-tablet.webp">
+                    <source type="image/webp" srcset="img/lighting-desktop.webp">
+
+                    <source media="(max-width: 769px)" srcset="img/lighting-mobile.jpg">
+                    <source media="(max-width: 1023px)" srcset="img/lighting-tablet.jpg">
+                    <img class="services__img" src="img/lighting-desktop.jpg" alt="Комплектующие для светотехники">
+                  </picture>
+                </div>
+
+                <h3 class="services__heading">Комплектующие для светотехники</h3>
+
+                <div class="services__arrow"></div>
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
     </main>

@@ -1,15 +1,17 @@
 .about {
   @include wrapper;
 
-  max-width: 1250px;
+  max-width: 1220px;
   min-height: 493px;
-  padding: 74px 58px 25px 0;
+  padding: 74px 30px 25px 0;
 
   background-image: url("../img/bg-about-desktop.png");
   background-repeat: no-repeat;
   background-position: 25px 84px;
 
   overflow: hidden;
+
+  @include outline;
 }
 
 .about__heading,
@@ -73,7 +75,8 @@
 @media (max-width: $tablet-width) {
   .about {
     min-height: 461px;
-    padding: 25px 29px 25px 0;
+    padding-top: 25px;
+    //padding: 25px 29px 25px 0;
 
     background-image: url("../img/bg-about-tablet.png");
     background-position: 25px 30px;

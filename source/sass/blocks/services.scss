@@ -1,0 +1,93 @@
+.services {
+  width: 100%;
+
+  background-color: $black;
+}
+
+.services__wrapper {
+  @include wrapper;
+  @include outline;
+
+  max-width: 1220px;
+  min-height: 938px;
+  padding: 60px 25px;
+}
+
+.services__title,
+.services__heading {
+  @include font-roboto-cond-normal;
+
+  color: white;
+}
+
+.services__title {
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.services__list {
+  @include ul-style;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  position: relative;
+
+  width: 31.625%;
+
+  &:nth-of-type(2n),
+  &:nth-of-type(3n) {
+    margin-left: auto;
+  }
+}
+
+.services__link {
+  display: block;
+
+  height: 620px;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $blue;
+    outline: 3px solid $blue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.services__img {
+  min-height: 620px;
+
+  opacity: 0.2;
+}
+
+.services__heading {
+  position: relative;
+  top: -590px;
+  left: 44px;
+  z-index: 2;
+
+  width: 166px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services__arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 63px;
+  height: 63px;
+
+  background-color: $blue;
+  background-image: url("../img/bg-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 6px 9px;
+  background-position: center;
+}
+
