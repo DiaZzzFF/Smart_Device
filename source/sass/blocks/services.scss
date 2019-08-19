@@ -6,7 +6,6 @@
 
 .services__wrapper {
   @include wrapper;
-  @include outline;
 
   max-width: 1220px;
   min-height: 938px;
@@ -24,6 +23,8 @@
   position: relative;
 
   width: 31.625%;
+
+  overflow: hidden;
 
   &:nth-of-type(2n),
   &:nth-of-type(3n) {
@@ -58,6 +59,8 @@
   @include font-roboto-cond-normal;
 
   color: white;
+
+  overflow: hidden;
 }
 
 .services__title {
@@ -137,5 +140,33 @@
 
   .services__heading {
     top: -236px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $mobile-width) {
+  .services__wrapper {
+    min-height: 1101px;
+    padding: 50px 15px 0;
+  }
+
+  .services__item {
+    width: 290px;
+    margin-bottom: 30px;
+  }
+
+  .services__title {
+    width: 290px;
+    margin-bottom: 42px;
+    padding-right: 0;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__heading {
+    top: -256px;
+    left: 35px;
   }
 }

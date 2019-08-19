@@ -10,8 +10,6 @@
   background-position: 25px 84px;
 
   overflow: hidden;
-
-  @include outline;
 }
 
 .about__heading,
@@ -76,7 +74,6 @@
   .about {
     min-height: 461px;
     padding-top: 25px;
-    //padding: 25px 29px 25px 0;
 
     background-image: url("../img/bg-about-tablet.png");
     background-position: 25px 30px;
