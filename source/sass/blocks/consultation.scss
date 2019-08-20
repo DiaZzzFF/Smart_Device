@@ -1,0 +1,164 @@
+.consultation {
+  width: 100%;
+  min-height: 670px;
+
+  background-color: $blue;
+}
+
+.consultation__airplane-bg {
+  @include wrapper;
+
+  max-width: 1920px;
+
+  background-image: url("../img/bg-airplane.png");
+  background-repeat: no-repeat;
+  background-size: 1803px 519px;
+  background-position: 196px 93px;
+}
+
+.consultation__wrapper {
+  @include wrapper;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  max-width: 1220px;
+  min-height: 670px;
+  padding: 91px 25px 25px;
+}
+
+.consultation__box-title,
+.consultation__form {
+  width: 570px;
+
+  background-color: $blue;
+}
+
+.consultation__headline {
+  @include font-roboto-cond-normal;
+
+  position: relative;
+  left: -3px;
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  line-height: 51px;
+  color: white;
+}
+
+.consultation__text {
+  margin: 0;
+  margin-bottom: 51px;
+
+  color: white;
+}
+
+.consultation__line-1,
+.consultation__line-2 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.consultation__item {
+  width: 270px;
+}
+
+.consultation__input,
+.consultation__textarea {
+  padding: 0 16.5px;
+
+  color: white;
+
+  background-color: rgba($color: white, $alpha: 0.1);
+  border: none;
+}
+
+.consultation__input::placeholder,
+.consultation__textarea::placeholder {
+  color: white;
+}
+
+.consultation__input {
+  width: 270px;
+  height: 50px;
+}
+
+.consultation__textarea {
+  width: 570px;
+  height: 154px;
+  margin-bottom: 37px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  resize: none;
+}
+
+.consultation__btn {
+  @include font-roboto-cond-bold;
+  @include btn;
+
+  width: 270px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: rgba($color: $black, $alpha: 0.5);
+    border-color: $black;
+  }
+}
+
+.consultation__label {
+  position: relative;
+
+  display: block;
+
+  padding-top: 5px;
+  padding-left: 39px;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.consultation__input + .consultation__label::before,
+.consultation__input:checked + .consultation__label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 7px;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid white;
+}
+
+.consultation__input + .consultation__label:hover::before,
+.consultation__input:checked + .consultation__label:hover::before {
+  cursor: pointer;
+}
+
+.consultation__input:checked + .consultation__label::before {
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+  background-position: center;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< airplane-bg >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: 1850px) {
+  .consultation__airplane-bg {
+    background-position: center 93px;
+  }
+}

@@ -66,28 +66,11 @@
 
 .contacts__btn {
   @include font-roboto-cond-bold;
-
-  display: block;
+  @include btn;
 
   width: 180px;
-  height: 45px;
-  margin: 0;
   margin-left: 40px;
   padding: 13.5px 0;
-
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 5px;
-
-  overflow: hidden;
-  cursor: pointer;
 
   &:hover {
     opacity: 0.8;

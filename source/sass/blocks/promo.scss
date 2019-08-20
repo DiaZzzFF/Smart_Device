@@ -29,7 +29,7 @@
   padding-top: 58px;
 }
 
-.promo__heading {
+.promo__headline {
   @include font-roboto-cond-bold;
 
   display: block;
@@ -150,7 +150,7 @@
     padding-top: 108px;
   }
 
-  .promo__heading {
+  .promo__headline {
     min-width: 200px;
     max-width: 350px;
 
@@ -208,7 +208,7 @@
     padding-left: 15px;
   }
 
-  .promo__heading {
+  .promo__headline {
     min-width: 300px;
     max-width: 320px;
     height: 94px;
