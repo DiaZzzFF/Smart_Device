@@ -128,6 +128,10 @@
   color: white;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .consultation__input + .consultation__label::before,
@@ -160,5 +164,65 @@
 @media (max-width: 1850px) {
   .consultation__airplane-bg {
     background-position: center 93px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (max-width: $tablet-width) {
+  .consultation {
+    min-height: 664px;
+  }
+
+  .consultation__airplane-bg {
+    background-image: none;
+  }
+
+  .consultation__wrapper {
+    align-items: center;
+
+    min-height: 664px;
+    padding-top: 80px;
+  }
+
+  .consultation__box-title,
+  .consultation__form {
+    width: 591px;
+  }
+
+  .consultation__headline {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .consultation__text {
+    margin-bottom: 54px;
+  }
+
+  .consultation__line-1,
+  .consultation__line-2 {
+    margin-bottom: 41.18px;
+  }
+
+  .consultation__item,
+  .consultation__btn {
+    width: 280px;
+  }
+
+  .consultation__input {
+    width: 280px;
+    height: 51.83px;
+  }
+
+  .consultation__textarea {
+    width: 591px;
+    height: 159.63px;
+    margin-bottom: 38.57px;
+  }
+
+  .consultation__btn {
+    height: 46.65px;
   }
 }
