@@ -1,6 +1,5 @@
 .consultation {
   width: 100%;
-  min-height: 670px;
 
   background-color: $blue;
 }
@@ -50,6 +49,8 @@
   font-size: 36px;
   line-height: 51px;
   color: white;
+
+  overflow: hidden;
 }
 
 .consultation__text {
@@ -57,6 +58,8 @@
   margin-bottom: 51px;
 
   color: white;
+
+  overflow: hidden;
 }
 
 .consultation__line-1,
@@ -127,6 +130,7 @@
 
   color: white;
 
+  overflow: hidden;
   cursor: pointer;
 
   &:hover {
@@ -170,10 +174,6 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $tablet-width) {
-  .consultation {
-    min-height: 664px;
-  }
-
   .consultation__airplane-bg {
     background-image: none;
   }
@@ -230,10 +230,6 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @media (max-width: $mobile-width) {
-  .consultation {
-    min-height: 640px;
-  }
-
   .consultation__wrapper {
     min-height: 640px;
     padding: 31px 15px 15px;
@@ -242,8 +238,6 @@
   .consultation__box-title,
   .consultation__form {
     max-width: 100%;
-
-    @include outline;
   }
 
   .consultation__headline {
@@ -280,8 +274,6 @@
 
   .consultation__input {
     width: 100%;
-
-    @include outline;
   }
 
   .consultation__textarea {
@@ -293,7 +285,6 @@
   .consultation__btn,
   .consultation__label {
     @include wrapper;
-    @include outline;
 
     width: 290px;
   }
