@@ -16,19 +16,20 @@
   @include ul-style;
 
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .services__item {
   position: relative;
 
   width: 31.625%;
+  margin-right: 2.5%;
+  margin-bottom: 30px;
 
   overflow: hidden;
 
-  &:nth-of-type(2n),
   &:nth-of-type(3n) {
-    margin-left: auto;
+    margin-right: 0;
   }
 
   &:hover {
@@ -45,7 +46,7 @@
 
   height: 620px;
 
-  &:hover {
+  &:hover .services__heading {
     text-decoration: underline;
     text-decoration-color: $blue;
   }
@@ -72,14 +73,16 @@
 }
 
 .services__heading {
-  position: relative;
-  top: -590px;
+  position: absolute;
+  top: 30px;
   left: 44px;
   z-index: 2;
 
   width: 166px;
   font-size: 20px;
   line-height: 30px;
+
+  cursor: pointer;
 }
 
 .services__arrow {
@@ -114,12 +117,8 @@
   .services__item {
     width: 715px;
     height: 256px;
+    margin-right: 0;
     margin-bottom: 46px;
-
-    &:nth-of-type(2n),
-    &:nth-of-type(3n) {
-      margin-left: 0;
-    }
   }
 
   .services__link {
@@ -142,7 +141,7 @@
   }
 
   .services__heading {
-    top: -236px;
+    top: 20px;
   }
 }
 
@@ -156,7 +155,6 @@
 
   .services__item {
     width: 290px;
-    margin-bottom: 30px;
   }
 
   .services__title {
@@ -169,7 +167,7 @@
   }
 
   .services__heading {
-    top: -256px;
+    top: 0;
     left: 35px;
   }
 }

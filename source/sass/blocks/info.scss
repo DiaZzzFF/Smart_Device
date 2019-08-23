@@ -9,13 +9,8 @@
   margin-left: 75px;
 }
 
-.info__nda {
-  margin-left: 142px;
-}
-
+.info__nda,
 .info__developer {
-  margin-left: auto;
-
   &:hover {
     @include footer-link-hover;
   }
@@ -23,6 +18,14 @@
   &:active {
     @include footer-link-active;
   }
+}
+
+.info__nda {
+  margin-left: 142px;
+}
+
+.info__developer {
+  margin-left: auto;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop-help-1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

@@ -201,8 +201,6 @@
   }
 
   .promo__advertising {
-    position: absolute;
-
     min-width: 250px;
     margin-top: 110px;
     padding-left: 15px;
@@ -211,24 +209,20 @@
   .promo__headline {
     min-width: 300px;
     max-width: 320px;
-    height: 94px;
+    min-height: 94px;
 
     font-size: 40px;
     line-height: 47px;
-
-    overflow: hidden;
   }
 
   .promo__text {
     width: 300px;
     margin-bottom: 39px;
     padding-left: 48px;
-    height: 75px;
+    min-height: 75px;
 
     font-size: 16px;
     line-height: 25px;
-
-    overflow: hidden;
   }
 
   .promo__link {
