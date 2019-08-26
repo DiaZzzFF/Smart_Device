@@ -2,15 +2,16 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 555;
+  z-index: 550;
 
   display: none;
+
   width: 100%;
   height: 100%;
 
   background-color: rgba($color: black, $alpha: 0.5);
+
+  overflow: hidden;
 }
 
 @keyframes bounce {
@@ -38,17 +39,38 @@
   animation-duration: 0.5s;
 }
 
-.popup__wrapper {
-  position: fixed;
+.popup__wrapper-1 {
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  z-index: 555;
 
-  width: 490px;
-  max-height: 605px;
-  margin: auto;
-  padding: 30px 39.28px 25px;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.popup__wrapper-2 {
+  position: relative;
+
+  display: inline-block;
+
+  max-width: 490px;
+  max-height: 760px;
+  padding: 30px 39.28px 38px;
+
+  vertical-align: middle;
+  text-align: left;
 
   background-color: $blue;
 

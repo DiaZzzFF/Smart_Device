@@ -63,8 +63,6 @@
   @include font-roboto-cond-normal;
 
   color: white;
-
-  overflow: hidden;
 }
 
 .services__title {
@@ -79,9 +77,12 @@
   z-index: 2;
 
   width: 166px;
+  max-height: 538px;
+
   font-size: 20px;
   line-height: 30px;
 
+  overflow: auto;
   cursor: pointer;
 }
 
@@ -142,6 +143,8 @@
 
   .services__heading {
     top: 20px;
+
+    max-height: 184px;
   }
 }
 
@@ -169,5 +172,7 @@
   .services__heading {
     top: 0;
     left: 35px;
+
+    max-height: 204px;
   }
 }
