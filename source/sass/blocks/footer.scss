@@ -40,6 +40,10 @@
   @include wrapper;
 }
 
+.footer__logo {
+  @include logo;
+}
+
 .footer__logo-img {
   width: 216px;
   height: 52px;

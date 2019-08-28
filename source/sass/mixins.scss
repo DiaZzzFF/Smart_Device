@@ -87,3 +87,17 @@
   overflow: hidden;
   cursor: pointer;
 }
+
+@mixin logo {
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+    outline: 1px solid $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+    outline: none;
+  }
+}

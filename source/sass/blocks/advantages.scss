@@ -31,7 +31,14 @@
 
   &:hover {
     color: white;
+
     background-color: $blue;
+    border-color: $blue;
+
+    transition-property: background-color;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+
     cursor: pointer;
   }
 

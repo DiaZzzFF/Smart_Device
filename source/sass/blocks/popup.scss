@@ -10,8 +10,6 @@
   height: 100%;
 
   background-color: rgba($color: black, $alpha: 0.5);
-
-  overflow: hidden;
 }
 
 @keyframes bounce {
@@ -34,9 +32,10 @@
 
 .popup__show {
   display: block;
+}
 
-  animation-name: bounce;
-  animation-duration: 0.5s;
+.popup__no-scroll {
+  overflow: hidden;
 }
 
 .popup__wrapper-1 {
@@ -49,6 +48,9 @@
   height: 100%;
 
   text-align: center;
+
+  animation-name: bounce;
+  animation-duration: 0.5s;
 
   &::before {
     content: "";

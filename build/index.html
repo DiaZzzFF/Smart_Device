@@ -12,10 +12,10 @@
     <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
 
     <link rel="stylesheet" href="css/style.min.css">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
   </head>
   <body>
-  <!-- <<<<<<<<<<<<<<< sprite >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
     <div style="display:none;">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check" viewbox="0 0 9 6">
 <path d="M0.5 2L3.5 5L8 0.5" stroke="white"></path>
@@ -62,13 +62,11 @@
 </symbol></svg>
     </div>
 
-  <!-- <<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
     <header class="header">
       <nav class="header__nav nav">
         <a class="nav__logo">
           <picture>
-            <source media="(max-width: 769px)" srcset="img/logo.svg">
+            <source media="(max-width: 767px)" srcset="img/logo.svg">
             <img class="nav__logo-img" src="img/logo-white.svg" width="202" height="52" alt="Логотип Smart Device">
           </picture>
         </a>
@@ -98,8 +96,6 @@
       </section>
     </header>
 
-  <!-- <<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
     <main class="main">
       <h1 class="visually-hidden">Smart Device</h1>
 
@@ -117,16 +113,16 @@
               <span class="promo__link-mobile">Бесплатная консультация</span>
             </a>
 
-            <span class="promo__scroll-down">Скролл вниз</span>
+            <button class="promo__scroll-down" type="button" aria-label="Прокрутить к разделу Преимущества">Скролл вниз</button>
           </article>
 
           <div class="promo__img-box">
             <picture>
-              <source type="image/webp" media="(max-width: 769px)" srcset="img/promo-mobile.webp">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile.webp">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/promo-tablet.webp">
               <source type="image/webp" srcset="img/promo-desktop.webp">
 
-              <source media="(max-width: 769px)" srcset="img/promo-mobile.png">
+              <source media="(max-width: 767px)" srcset="img/promo-mobile.png">
               <source media="(max-width: 1023px)" srcset="img/promo-tablet.png">
               <img class="promo__img" src="img/promo-desktop.png" alt="Печатные платы">
             </picture>
@@ -230,11 +226,11 @@
 
                 <div class="services__img-box">
                   <picture>
-                    <source type="image/webp" media="(max-width: 769px)" srcset="img/pcb-manufacturing-mobile.webp">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pcb-manufacturing-mobile.webp">
                     <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-manufacturing-tablet.webp">
                     <source type="image/webp" srcset="img/pcb-manufacturing-desktop.webp">
 
-                    <source media="(max-width: 769px)" srcset="img/pcb-manufacturing-mobile.jpg">
+                    <source media="(max-width: 767px)" srcset="img/pcb-manufacturing-mobile.jpg">
                     <source media="(max-width: 1023px)" srcset="img/pcb-manufacturing-tablet.jpg">
                     <img class="services__img" src="img/pcb-manufacturing-desktop.jpg" alt="Производство печатных плат">
                   </picture>
@@ -250,11 +246,11 @@
 
                 <div class="services__img-box">
                   <picture>
-                    <source type="image/webp" media="(max-width: 769px)" srcset="img/pcb-assembly-mobile.webp">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/pcb-assembly-mobile.webp">
                     <source type="image/webp" media="(max-width: 1023px)" srcset="img/pcb-assembly-tablet.webp">
                     <source type="image/webp" srcset="img/pcb-assembly-desktop.webp">
 
-                    <source media="(max-width: 769px)" srcset="img/pcb-assembly-mobile.jpg">
+                    <source media="(max-width: 767px)" srcset="img/pcb-assembly-mobile.jpg">
                     <source media="(max-width: 1023px)" srcset="img/pcb-assembly-tablet.jpg">
                     <img class="services__img" src="img/pcb-assembly-desktop.jpg" alt="Монтаж печатных плат">
                   </picture>
@@ -270,11 +266,11 @@
 
                 <div class="services__img-box">
                   <picture>
-                    <source type="image/webp" media="(max-width: 769px)" srcset="img/lighting-mobile.webp">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/lighting-mobile.webp">
                     <source type="image/webp" media="(max-width: 1023px)" srcset="img/lighting-tablet.webp">
                     <source type="image/webp" srcset="img/lighting-desktop.webp">
 
-                    <source media="(max-width: 769px)" srcset="img/lighting-mobile.jpg">
+                    <source media="(max-width: 767px)" srcset="img/lighting-mobile.jpg">
                     <source media="(max-width: 1023px)" srcset="img/lighting-tablet.jpg">
                     <img class="services__img" src="img/lighting-desktop.jpg" alt="Комплектующие для светотехники">
                   </picture>
@@ -311,7 +307,7 @@
 
                 <div class="consultation__item consultation__item--tel">
                   <label class="visually-hidden" for="customer-tel">Телефон</label>
-                  <input class="consultation__input" type="tel" name="tel" id="customer-tel" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат: 999-888-77-55" required="">
+                  <input class="consultation__input" type="tel" name="tel" id="customer-tel" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" title="Формат: +7 (777) 777-77-77" required="">
                 </div>
               </div>
 
@@ -333,12 +329,12 @@
       </section>
     </main>
 
-  <!-- <<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
     <footer class="footer">
       <div class="footer__wrapper-1">
         <section class="footer__top">
-          <img class="footer__logo-img" src="img/logo-black.svg" width="216" height="52" alt="Логотип Smart Device">
+          <a class="footer__logo">
+            <img class="footer__logo-img" src="img/logo-black.svg" width="216" height="52" alt="Логотип Smart Device">
+          </a>
 
           <p class="footer__t-license">1999-2018 SD Service Devices</p>
 
@@ -458,53 +454,58 @@
       </div>
     </footer>
 
-  <!-- <<<<<<<<<<<<<<< popup >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
     <section class="popup">
       <div class="popup__overlay">
-        <div class="popup__wrapper-1">
-          <div class="popup__wrapper-2">
-            <button class="popup__close" aria-label="Закрыть окно"></button>
 
-            <div class="popup__box-title">
-              <h2 class="popup__heading">
-                Закажите звонок
-              </h2>
+      <div class="popup__wrapper-1">
+        <div class="popup__wrapper-2">
+      <!--    <div class="popup__wrapper-3"> -->
+          <button class="popup__close" aria-label="Закрыть окно"></button>
 
-              <p class="popup__text">
-                Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-              </p>
+          <div class="popup__box-title">
+            <h2 class="popup__heading">
+              Закажите звонок
+            </h2>
+
+            <p class="popup__text">
+              Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+            </p>
+          </div>
+
+          <form class="popup__form" action="#" method="POST">
+            <div class="popup__item popup__item--name">
+              <label class="visually-hidden" for="popup-customer-name">Имя</label>
+              <input class="popup__input" type="text" name="name" id="popup-customer-name" placeholder="Имя" required="">
             </div>
 
-            <form class="popup__form" action="#" method="POST">
-              <div class="popup__item popup__item--name">
-                <label class="visually-hidden" for="popup-customer-name">Имя</label>
-                <input class="popup__input" type="text" name="name" id="popup-customer-name" placeholder="Имя" required="">
-              </div>
+            <div class="popup__item popup__item--tel">
+              <label class="visually-hidden" for="popup-customer-tel">Телефон</label>
+              <input class="popup__input" type="tel" name="tel" id="popup-customer-tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" title="Формат: +7 (777) 777-77-77" required="">
+            </div>
 
-              <div class="popup__item popup__item--tel">
-                <label class="visually-hidden" for="popup-customer-tel">Телефон</label>
-                <input class="popup__input" type="tel" name="tel" id="popup-customer-tel" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Формат: 999-888-77-55" required="">
-              </div>
+            <textarea class="popup__textarea" name="question" id="popup-customer-question" placeholder="Ваш вопрос"></textarea>
 
-              <textarea class="popup__textarea" name="question" id="popup-customer-question" placeholder="Ваш вопрос"></textarea>
+            <button class="popup__btn" type="submit">Отправить</button>
 
-              <button class="popup__btn" type="submit">Отправить</button>
+            <div class="popup__item popup__item--personal-data">
+              <input class="popup__input visually-hidden" type="checkbox" name="personal-data" id="popup-customer-personal-data" required="">
+              <label class="popup__label" for="popup-customer-personal-data">
+                Я согласен на обработку персональных данных
+              </label>
+            </div>
+          </form>
 
-              <div class="popup__item popup__item--personal-data">
-                <input class="popup__input visually-hidden" type="checkbox" name="personal-data" id="popup-customer-personal-data" required="">
-                <label class="popup__label" for="popup-customer-personal-data">
-                  Я согласен на обработку персональных данных
-                </label>
-              </div>
-            </form>
-          </div>
+ <!--     </div> -->
+
         </div>
+      </div>
+
       </div>
     </section>
 
-
     <script src="js/picturefill.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

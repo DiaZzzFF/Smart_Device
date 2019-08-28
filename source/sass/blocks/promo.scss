@@ -25,7 +25,7 @@
 
   min-width: 726px;
   margin-left: auto;
-  padding-left: 25px;
+  padding-left: 16px;
   padding-top: 58px;
 }
 
@@ -101,15 +101,29 @@
 
 .promo__scroll-down {
   position: absolute;
-  bottom: 127px;
-  left: -10px;
+  bottom: 99px;
+  left: -21px;
+
+  padding: 3px;
 
   font-size: 14px;
   line-height: 16px;
   color: white;
 
+  background-color: transparent;
+  border: none;
+
   opacity: 0.5;
   transform: rotate(-90deg);
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: rgba($color: $blue, $alpha: 0.2);
+  }
 }
 
 .promo__img-box {
