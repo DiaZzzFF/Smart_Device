@@ -20,7 +20,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 550;
+  z-index: 5;
 
   display: none;
 
@@ -28,61 +28,29 @@
   height: 100%;
 
   background-color: rgba($color: black, $alpha: 0.5);
-
-  overflow: hidden;
 }
 
-.popup__wrapper-1 {
+.popup__wrapper {
   position: fixed;
-  top: 0;
+  top: 136px;
   left: 0;
-  z-index: 551;
+  right: 0;
+  bottom: auto;
+  z-index: 10;
 
   display: none;
 
-  width: 100%;
-  height: 100%;
+  max-width: 490px;
+  max-height: 690px;
+  margin: auto;
+  padding: 30px 39.28px 38px;
 
-  overflow: hidden auto;
+  background-color: $blue;
 
   animation-name: bounce;
   animation-duration: 0.5s;
-}
 
-.popup__wrapper-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  text-align: center;
-
-  &::before {
-    content: "";
-
-    display: inline-block;
-
-    height: 100%;
-    vertical-align: middle;
-  }
-}
-
-.popup__wrapper-3 {
-  position: relative;
-  z-index: 553px;
-
-  display: inline-block;
-
-  max-width: 490px;
-  max-height: 760px;
-  padding: 30px 39.28px 38px;
-
-  vertical-align: middle;
-  text-align: left;
-
-  background-color: $blue;
+  overflow: auto;
 }
 
 .popup__show {

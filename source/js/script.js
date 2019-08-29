@@ -7,7 +7,7 @@
   var myBtnShow = myBody.querySelector('.contacts__btn');
   var myPopup = myBody.querySelector('.popup');
   var myOverlay = myPopup.querySelector('.popup__overlay');
-  var myPopupBox = myPopup.querySelector('.popup__wrapper-1');
+  var myPopupBox = myPopup.querySelector('.popup__wrapper');
   var myBtnClose = myPopup.querySelector('.popup__close');
   var myBtnScrollDown = myBody.querySelector('.promo__scroll-down');
 
