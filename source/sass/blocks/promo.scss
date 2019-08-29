@@ -22,6 +22,7 @@
 
 .promo__advertising {
   position: relative;
+  z-index: 5;
 
   min-width: 726px;
   margin-left: auto;
@@ -217,16 +218,19 @@
   .promo__advertising {
     min-width: 250px;
     margin-top: 110px;
+    margin-left: 0;
     padding-left: 15px;
   }
 
   .promo__headline {
-    min-width: 300px;
-    max-width: 320px;
+    min-width: 270px;
+    max-width: 290px;
     min-height: 94px;
 
     font-size: 40px;
     line-height: 47px;
+
+    overflow-x: auto;
   }
 
   .promo__text {
@@ -245,6 +249,9 @@
   }
 
   .promo__img-box {
+    position: absolute;
+    right: 0;
+
     min-width: 294px;
     height: 368px;
   }

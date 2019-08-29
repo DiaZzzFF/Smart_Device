@@ -98,7 +98,7 @@
 
   .advantages__heading {
     margin-bottom: 9px;
-    padding-right: 10px;
+    padding-right: 15px;
   }
 
   .advantages__text {
@@ -118,6 +118,9 @@
   .advantages__item {
     width: 100%;
     min-width: 290px;
+    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     &:nth-of-type(2n) {
       margin-left: 0;

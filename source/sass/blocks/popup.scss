@@ -1,17 +1,3 @@
-.popup__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 550;
-
-  display: none;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba($color: black, $alpha: 0.5);
-}
-
 @keyframes bounce {
   0% {
     transform: translateY(-2555px);
@@ -30,27 +16,48 @@
   }
 }
 
-.popup__show {
-  display: block;
-}
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 550;
 
-.popup__no-scroll {
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color: black, $alpha: 0.5);
+
   overflow: hidden;
 }
 
 .popup__wrapper-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 551;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden auto;
+
+  animation-name: bounce;
+  animation-duration: 0.5s;
+}
+
+.popup__wrapper-2 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 555;
 
   width: 100%;
   height: 100%;
 
   text-align: center;
-
-  animation-name: bounce;
-  animation-duration: 0.5s;
 
   &::before {
     content: "";
@@ -62,8 +69,9 @@
   }
 }
 
-.popup__wrapper-2 {
+.popup__wrapper-3 {
   position: relative;
+  z-index: 553px;
 
   display: inline-block;
 
@@ -75,8 +83,14 @@
   text-align: left;
 
   background-color: $blue;
+}
 
-  overflow: auto;
+.popup__show {
+  display: block;
+}
+
+.popup__no-scroll {
+  overflow: hidden;
 }
 
 .popup__close {

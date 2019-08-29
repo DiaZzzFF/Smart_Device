@@ -7,21 +7,42 @@
   var myBtnShow = myBody.querySelector('.contacts__btn');
   var myPopup = myBody.querySelector('.popup');
   var myOverlay = myPopup.querySelector('.popup__overlay');
-  // var myPopupBox = myPopup.querySelector('.popup__wrapper-1');
+  var myPopupBox = myPopup.querySelector('.popup__wrapper-1');
   var myBtnClose = myPopup.querySelector('.popup__close');
+  var myBtnScrollDown = myBody.querySelector('.promo__scroll-down');
 
   var yourName = myPopup.querySelector('[name=name]');
   var tel = myPopup.querySelector('[name=tel]');
-
   var storage = '';
 
-  var myBtnScrollDown = document.querySelector('.promo__scroll-down');
+  var onPopupEscPress = function (evt) {
+    if (evt.keyCode === ESC_KEYCODE) {
+      closePopup();
+    }
+  };
+
+  var closePopup = function () {
+    myOverlay.classList.remove('popup__show');
+    myPopupBox.classList.remove('popup__show');
+    myBody.classList.remove('popup__no-scroll');
+
+    document.removeEventListener('keydown', onPopupEscPress);
+  };
+
+  var openPopup = function () {
+    closePopup();
+
+    myOverlay.classList.add('popup__show');
+    myPopupBox.classList.add('popup__show');
+    myBody.classList.add('popup__no-scroll');
+
+    document.addEventListener('keydown', onPopupEscPress);
+  };
 
   myBtnShow.addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    myOverlay.classList.add('popup__show');
-    myBody.classList.add('popup__no-scroll');
+    openPopup();
 
     if (storage) {
       tel.value = storage;
@@ -35,19 +56,13 @@
   myBtnClose.addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    myOverlay.classList.remove('popup__show');
-    myBody.classList.remove('popup__no-scroll');
+    closePopup();
   });
 
-  window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === ESC_KEYCODE) {
-      if (myOverlay.classList.contains('popup__show')) {
-        evt.preventDefault();
+  myOverlay.addEventListener('click', function (evt) {
+    evt.preventDefault();
 
-        myOverlay.classList.remove('popup__show');
-        myBody.classList.remove('popup__no-scroll');
-      }
-    }
+    closePopup();
   });
 
   myBtnScrollDown.addEventListener('click', function () {

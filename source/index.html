@@ -329,43 +329,48 @@
 
             <h4 class="f-menu__headline accordion__title">Разделы сайта</h4>
 
-            <ul class="f-menu__list accordion__content">
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  О компании
-                </a>
-              </li>
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  Продукты
-                </a>
-              </li>
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  Производство печатных плат
-                </a>
-              </li>
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  Монтаж печатных плат
-                </a>
-              </li>
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  Комплектующие
-                </a>
-              </li>
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  Доставка
-                </a>
-              </li>
-              <li class="f-menu__item">
-                <a class="f-menu__link" href="#">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+            <div class="f-menu__wrapper accordion__content">
+              <ul class="f-menu__list-1">
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    О компании
+                  </a>
+                </li>
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    Продукты
+                  </a>
+                </li>
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    Производство печатных плат
+                  </a>
+                </li>
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    Монтаж печатных плат
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="f-menu__list-2">
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    Комплектующие
+                  </a>
+                </li>
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="f-menu__item">
+                  <a class="f-menu__link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <section class="footer__location location accordion__item">
@@ -413,51 +418,47 @@
     </footer>
 
     <section class="popup">
-      <div class="popup__overlay">
+      <div class="popup__overlay"></div>
 
       <div class="popup__wrapper-1">
         <div class="popup__wrapper-2">
-      <!--    <div class="popup__wrapper-3"> -->
-          <button class="popup__close" aria-label="Закрыть окно"></button>
+          <div class="popup__wrapper-3">
+            <button class="popup__close" aria-label="Закрыть окно"></button>
 
-          <div class="popup__box-title">
-            <h2 class="popup__heading">
-              Закажите звонок
-            </h2>
+            <div class="popup__box-title">
+              <h2 class="popup__heading">
+                Закажите звонок
+              </h2>
 
-            <p class="popup__text">
-              Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-            </p>
+              <p class="popup__text">
+                Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+              </p>
+            </div>
+
+            <form class="popup__form" action="#" method="POST">
+              <div class="popup__item popup__item--name">
+                <label class="visually-hidden" for="popup-customer-name">Имя</label>
+                <input class="popup__input" type="text" name="name" id="popup-customer-name" placeholder="Имя" required>
+              </div>
+
+              <div class="popup__item popup__item--tel">
+                <label class="visually-hidden" for="popup-customer-tel">Телефон</label>
+                <input class="popup__input" type="tel" name="tel" id="popup-customer-tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" title="Формат: +7 (777) 777-77-77" required>
+              </div>
+
+              <textarea class="popup__textarea" name="question" id="popup-customer-question" placeholder="Ваш вопрос"></textarea>
+
+              <button class="popup__btn" type="submit">Отправить</button>
+
+              <div class="popup__item popup__item--personal-data">
+                <input class="popup__input visually-hidden" type="checkbox" name="personal-data" id="popup-customer-personal-data" required>
+                <label class="popup__label" for="popup-customer-personal-data">
+                  Я согласен на обработку персональных данных
+                </label>
+              </div>
+            </form>
           </div>
-
-          <form class="popup__form" action="#" method="POST">
-            <div class="popup__item popup__item--name">
-              <label class="visually-hidden" for="popup-customer-name">Имя</label>
-              <input class="popup__input" type="text" name="name" id="popup-customer-name" placeholder="Имя" required>
-            </div>
-
-            <div class="popup__item popup__item--tel">
-              <label class="visually-hidden" for="popup-customer-tel">Телефон</label>
-              <input class="popup__input" type="tel" name="tel" id="popup-customer-tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" title="Формат: +7 (777) 777-77-77" required>
-            </div>
-
-            <textarea class="popup__textarea" name="question" id="popup-customer-question" placeholder="Ваш вопрос"></textarea>
-
-            <button class="popup__btn" type="submit">Отправить</button>
-
-            <div class="popup__item popup__item--personal-data">
-              <input class="popup__input visually-hidden" type="checkbox" name="personal-data" id="popup-customer-personal-data" required>
-              <label class="popup__label" for="popup-customer-personal-data">
-                Я согласен на обработку персональных данных
-              </label>
-            </div>
-          </form>
-
- <!--     </div> -->
-
         </div>
-      </div>
-
       </div>
     </section>
 
